@@ -1,0 +1,90 @@
+﻿#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .custom-table thead {
+        background-color: #007bff; /* Màu xanh */
+        color: white;
+    }
+
+    .custom-table tbody {
+        background-color: white; /* Màu trắng */
+    }
+
+    .custom-table th, .custom-table td {
+        border: 1px solid #dddddd; /* Đường viền màu xám */
+        padding: 8px;
+        text-align: left;
+    }
+
+    .custom-table th {
+        font-weight: bold;
+    }
+
+    .custom-table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Màu nền xám nhạt cho các hàng chẵn */
+    }
+
+.loading-animation {
+    border: 8px solid #f3f3f3; /* Xám nhạt */
+    border-top: 8px solid #3498db; /* Màu xanh */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 5s linear infinite; /* Hiệu ứng quay trong 2 giây */
+    margin: 0 auto; /* Canh giữa */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.search-input {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    height: 35px;
+    margin-right: 5px;
+}
+
+    .search-input:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+.hidden {
+    display: none;
+}
+/* Trong tệp CSS của bạn, thêm các quy tắc cho nút "Back" */
+button {
+    padding: 10px 20px; /* Đặt khoảng cách lề cho nút */
+    background-color: aqua; /* Màu nền */
+    color: black; /* Màu chữ */
+    border: none; /* Xóa viền */
+    border-radius: 5px; /* Đường viền cong */
+    cursor: pointer; /* Con trỏ chuột */
+    font-size: 16px; /* Cỡ chữ */
+}
+
+    /* Tạo hover effect cho nút */
+    button:hover {
+        background-color: #45a049; /* Màu nền khi hover */
+    }
