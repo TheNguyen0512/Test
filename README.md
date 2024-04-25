@@ -1,4 +1,4 @@
-# Hướng dẫn chạy dự án sử dụng Visual Studio
+# Hướng dẫn chạy dự án Test 2 sử dụng Visual Studio
 
 ## 1. Cài đặt môi trường
 
@@ -23,6 +23,7 @@ Mở tệp `appsettings.json` và sửa các thông số sau:
   }
 }
 Thay thế <your_server>, <your_database>, <your_user_id>, và <your_password> bằng thông tin kết nối của bạn.
+```
 
 ## 4. Mở dự án trong Visual Studio
 Mở thư mục dự án bằng Visual Studio bằng cách chọn File > Open > Project/Solution và chọn tệp .sln tương ứng.
