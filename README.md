@@ -23,7 +23,7 @@ Mở tệp `appsettings.json` và sửa các thông số sau:
   }
 }
 ```
-Thay thế <your_server>, <your_database>, <your_user_id>, và <your_password> bằng thông tin kết nối của bạn.
+Thay thế `<your_server>`, `<your_database>`, `<your_user_id>`, và `<your_password>` bằng thông tin kết nối của bạn.
 
 ## 4. Mở dự án trong Visual Studio
 Mở thư mục dự án bằng Visual Studio bằng cách chọn File > Open > Project/Solution và chọn tệp .sln tương ứng.
