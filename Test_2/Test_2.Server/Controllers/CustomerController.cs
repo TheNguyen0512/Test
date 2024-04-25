@@ -18,6 +18,15 @@ namespace Test_2.Server.Controllers
 		}
 
 		// GET: api/Customers
+		/// <summary>
+		/// Hàm C# này sử dụng Entity Framework để truy xuất danh sách khách hàng và trả về chúng dưới dạng một
+		/// phản hồi, xử lý các ngoại lệ với một thông báo lỗi nếu cần.
+		/// </summary>
+		/// <returns>
+		/// Phương thức GetCustomers trả về một ActionResult chứa một danh sách các đối tượng Khách hàng. Nếu
+		/// thao tác thành công, nó trả về một phản hồi Ok với danh sách khách hàng. Nếu có ngoại lệ
+		/// xảy ra trong quá trình thực hiện, nó trả về một phản hồi Lỗi Nội bộ 500 với thông báo lỗi.
+		/// </returns>
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
 		{
@@ -34,6 +43,17 @@ namespace Test_2.Server.Controllers
 		}
 
 		// GET: api/Customers
+		/// <summary>
+		/// Hàm này lấy danh sách khách hàng dựa trên một truy vấn tìm kiếm, bằng ID hoặc tên, và
+		/// trả về tất cả khách hàng nếu không có truy vấn được cung cấp.
+		/// </summary>
+		/// <param name="query">Đoạn mã bạn cung cấp là một điểm cuối GET trong một bộ điều khiển tìm kiếm
+		/// khách hàng dựa trên một tham số truy vấn. Nếu có truy vấn được cung cấp, nó tìm kiếm khách hàng theo
+		/// CustomerID, CompanyName, hoặc ContactName chứa chuỗi truy vấn. Nếu không có truy vấn được cung cấp,
+		/// nó trả về tất cả khách hàng.</param>
+		/// <returns>
+		/// Đoạn mã cung cấp là một phương thức C# xử lý yêu cầu GET để tìm kiếm khách hàng dựa trên một tham số truy vấn.
+		/// </returns>
 		[HttpGet("Search")]
 		public async Task<ActionResult<IEnumerable<Customer>>> GetSearch(string query)
 		{
@@ -68,6 +88,14 @@ namespace Test_2.Server.Controllers
 
 
 		// GET: api/Customers/SortedByIdAsc
+		/// <summary>
+		/// Hàm C# này lấy danh sách khách hàng được sắp xếp theo CustomerID của họ theo thứ tự tăng dần.
+		/// </summary>
+		/// <returns>
+		/// Mã này trả về một danh sách khách hàng được sắp xếp theo thứ tự tăng dần bởi CustomerID của họ. Nếu
+		/// thao tác thành công, nó sẽ trả về một phản hồi Ok với danh sách khách hàng đã sắp xếp. Nếu có
+		/// ngoại lệ xảy ra trong quá trình, nó sẽ trả về một phản hồi Lỗi Nội bộ 500 với thông báo lỗi.
+		/// </returns>
 		[HttpGet("SortedByCustomerIdAsc")]
 		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByCustomersIdAscending()
 		{
@@ -83,6 +111,14 @@ namespace Test_2.Server.Controllers
 		}
 
 		// GET: api/Customers/SortedByIdDesc
+		/// <summary>
+		/// Hàm C# này lấy danh sách khách hàng được sắp xếp theo CustomerID của họ theo thứ tự giảm dần.
+		/// </summary>
+		/// <returns>
+		/// Mã này trả về một danh sách khách hàng được sắp xếp theo thứ tự giảm dần bởi CustomerID của họ. Nếu
+		/// thao tác thành công, nó sẽ trả về một phản hồi Ok với danh sách khách hàng đã sắp xếp. Nếu có
+		/// ngoại lệ xảy ra trong quá trình, nó sẽ trả về một phản hồi Lỗi Nội bộ 500 với thông báo lỗi.
+		/// </returns>
 		[HttpGet("SortedByCustomerIdDesc")]
 		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByCustomersIdDescending()
 		{
@@ -187,6 +223,126 @@ namespace Test_2.Server.Controllers
 			}
 		}
 
+		// GET: api/Customers/SortedByAddressAsc
+		[HttpGet("SortedByAddressAsc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByAddressAscending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderBy(c => c.Address).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByAddressDesc
+		[HttpGet("SortedByAddressDesc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByAddressDescending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderByDescending(c => c.Address).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByCityAsc
+		[HttpGet("SortedByCityAsc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByCityAscending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderBy(c => c.City).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByCityDesc
+		[HttpGet("SortedByCityDesc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByCityDescending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderByDescending(c => c.City).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByRegionAsc
+		[HttpGet("SortedByRegionAsc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByRegionAscending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderBy(c => c.Region).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByRegionDesc
+		[HttpGet("SortedByRegionDesc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByRegionDescending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderByDescending(c => c.Region).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByPostalCodeAsc
+		[HttpGet("SortedByPostalCodeAsc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByPostalCodeAscending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderBy(c => c.PostalCode).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByPostalCodeDesc
+		[HttpGet("SortedByPostalCodeDesc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByPostalCodeDescending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderByDescending(c => c.PostalCode).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
 		// GET: api/Customers/SortedByCountryAsc
 		[HttpGet("SortedByCountryAsc")]
 		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByCountryAscending()
@@ -209,6 +365,66 @@ namespace Test_2.Server.Controllers
 			try
 			{
 				var customers = await _context.Customers.OrderByDescending(c => c.Country).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByPhoneAsc
+		[HttpGet("SortedByPhoneAsc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByPhoneAscending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderBy(c => c.Phone).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByCountryDesc
+		[HttpGet("SortedByPhoneDesc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByPhoneDescending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderByDescending(c => c.Phone).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByFaxAsc
+		[HttpGet("SortedByFaxAsc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByFaxAscending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderBy(c => c.Fax).ToListAsync();
+				return Ok(customers);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, $"Internal server error: {ex.Message}");
+			}
+		}
+
+		// GET: api/Customers/SortedByCountryDesc
+		[HttpGet("SortedByFaxDesc")]
+		public async Task<ActionResult<IEnumerable<Customer>>> GetSortedByFaxDescending()
+		{
+			try
+			{
+				var customers = await _context.Customers.OrderByDescending(c => c.Fax).ToListAsync();
 				return Ok(customers);
 			}
 			catch (Exception ex)

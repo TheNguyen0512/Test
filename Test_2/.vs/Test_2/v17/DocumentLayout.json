@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Test\\Test_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0ECB2CEF-3AC4-448C-878D-B9FF89261D18}|test_2.client\\test_2.client.esproj|d:\\test\\test_2\\test_2.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0ECB2CEF-3AC4-448C-878D-B9FF89261D18}|test_2.client\\test_2.client.esproj|solutionrelative:test_2.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC8B95D6-0770-4928-8E49-033085A01DEC}|Test_2.Server\\Test_2.Server.csproj|d:\\test\\test_2\\test_2.server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC8B95D6-0770-4928-8E49-033085A01DEC}|Test_2.Server\\Test_2.Server.csproj|solutionrelative:test_2.server\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECB2CEF-3AC4-448C-878D-B9FF89261D18}|test_2.client\\test_2.client.esproj|d:\\test\\test_2\\test_2.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0ECB2CEF-3AC4-448C-878D-B9FF89261D18}|test_2.client\\test_2.client.esproj|solutionrelative:test_2.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "D:\\Test\\Test_2\\Test_2.Server\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Test_2.Server\\Controllers\\CustomerController.cs",
               "ToolTip": "D:\\Test\\Test_2\\Test_2.Server\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Test_2.Server\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAL8AAAAAAAAAAAAIwL0AAAAqAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAIwDkBAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T09:05:01.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "App.jsx",
               "DocumentMoniker": "D:\\Test\\Test_2\\test_2.client\\src\\App.jsx",
               "RelativeDocumentMoniker": "test_2.client\\src\\App.jsx",
               "ToolTip": "D:\\Test\\Test_2\\test_2.client\\src\\App.jsx",
               "RelativeToolTip": "test_2.client\\src\\App.jsx",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAAAIAAAAAgAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAH4AAAB1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-04-23T09:38:16.894Z",
               "EditorCaption": ""

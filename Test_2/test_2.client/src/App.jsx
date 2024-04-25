@@ -24,6 +24,10 @@ function App() {
         populateCustomerData();
     }, []);
 
+    /**
+     *  Hàm handleSearchInputChange cập nhật truy vấn tìm kiếm, xóa kết quả tìm kiếm và 
+     *  tái tạo dữ liệu khách hàng nếu truy vấn tìm kiếm trống.
+     */
     const handleSearchInputChange = (event) => {
         const query = event.target.value;
         setSearchQuery(query);
@@ -38,6 +42,8 @@ function App() {
         searchCustomers(searchQuery);
     };
 
+    /* Phần mã trên là một hàm JavaScript React được gọi là renderContent, có trách nhiệm
+    hiển thị nội dung dựa trên các điều kiện khác nhau.*/
     const renderContent = () => {
         const displayCustomers = searchResults.length > 0 ? searchResults : customers;
 
@@ -99,15 +105,27 @@ function App() {
                                 <th onClick={() => sortCustomers('contactTitle')}>
                                     Contact Title {sortOrder.contactTitle === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.contactTitle === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
                                 </th>
-                                <th>Address</th>
-                                <th>City</th>
-                                <th>Region</th>
-                                <th>Postal Code</th>
+                                <th onClick={() => sortCustomers('address')}>
+                                    Address {sortOrder.address === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.address === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
+                                </th>
+                                <th onClick={() => sortCustomers('city')}>
+                                    City {sortOrder.city === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.city === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
+                                </th>
+                                <th onClick={() => sortCustomers('region')}>
+                                    Region {sortOrder.region === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.region === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
+                                </th>
+                                <th onClick={() => sortCustomers('postalCode')}>
+                                    Postal Code {sortOrder.postalCode === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.postalCode === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
+                                </th>
                                 <th onClick={() => sortCustomers('country')}>
                                     Country{sortOrder.country === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.country === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
                                 </th>
-                                <th>Phone</th>
-                                <th>Fax</th>
+                                <th onClick={() => sortCustomers('phone')}>
+                                    Phone{sortOrder.phone === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.phone === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
+                                </th>
+                                <th onClick={() => sortCustomers('fax')}>
+                                    Fax{sortOrder.fax === 'asc' ? <FontAwesomeIcon icon={faSortUp} /> : sortOrder.fax === 'desc' ? <FontAwesomeIcon icon={faSortDown} /> : null}
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -132,8 +150,11 @@ function App() {
             );
         }
     };
-
-
+    
+    /**
+    * Hàm sortCustomers bất đồng bộ lấy và sắp xếp dữ liệu khách hàng dựa trên một cột được chỉ định,
+    * xử lý trạng thái tải, lỗi, và cập nhật thứ tự sắp xếp.
+    */
     const sortCustomers = async (column) => {
         setLoading(true);
         setLoadingAnimation(true);
@@ -163,6 +184,10 @@ function App() {
         populateCustomerData();
     };
 
+   /**
+    * Hàm searchCustomers là một hàm bất đồng bộ lấy dữ liệu khách hàng dựa trên một truy vấn,
+    * xử lý các kịch bản phản hồi khác nhau và cập nhật các biến trạng thái tương ứng.
+    */
     const searchCustomers = async (query) => {
         setLoading(true);
         setLoadingAnimation(true);
@@ -195,6 +220,11 @@ function App() {
         }
     };
 
+    
+    /**
+    * Hàm populateCustomerData bất đồng bộ lấy dữ liệu khách hàng từ một điểm cuối API được chỉ định,
+    * xử lý các lỗi và cập nhật trạng thái tương ứng.
+    */
     async function populateCustomerData() {
         setLoading(true);
         try {

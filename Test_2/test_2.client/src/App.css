@@ -73,7 +73,6 @@
 .hidden {
     display: none;
 }
-/* Trong tệp CSS của bạn, thêm các quy tắc cho nút "Back" */
 button {
     padding: 10px 20px; /* Đặt khoảng cách lề cho nút */
     background-color: aqua; /* Màu nền */
