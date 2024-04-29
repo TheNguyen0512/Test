@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\tfu-net-core\TFU.APIBased\TFU.APIBased.csproj" />
+    <ProjectReference Include="..\tfu-net-core\TFU.BLL\TFU.BLL.csproj" />
+    <ProjectReference Include="..\tfu-net-core\TFU.DAL\TFU.DAL.csproj" />
+    <ProjectReference Include="..\tfu-net-core\TFU.Utility\TFU.Utility.csproj" />
+    <ProjectReference Include="..\tfu-net-core\TFU.WebBased\TFU.MVCWebBased.csproj" />
+    <ProjectReference Include="App.BLL\App.BLL.csproj" />
+    <ProjectReference Include="App.DAL\App.DAL.csproj" />
+    <ProjectReference Include="App.Entity\App.Entity.csproj" />
+  </ItemGroup>
+
+</Project>
