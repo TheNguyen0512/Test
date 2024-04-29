@@ -8,7 +8,7 @@ using TFU.Common;
 
 namespace App.Entity.Models
 {
-	public class CustomerModel : IEntity<CustomerDTO>
+	public class CustomersModel : IEntity<CustomersDTO>
 	{
 		public string CustomerID { get; set; }
 		public string CompanyName { get; set; }
@@ -22,24 +22,27 @@ namespace App.Entity.Models
 		public string Phone { get; set; }
 		public string Fax { get; set; }
 
-		public CustomerModel() { }
+		public CustomersModel() { }
 
-		public CustomerModel(CustomerDTO dto)
+		public CustomersModel(CustomersDTO dto)
 		{
 			CustomerID = dto.CustomerID;
 			CompanyName = dto.CompanyName;
-			ContactName = dto.ContactName;
-			ContactTitle = dto.ContactTitle;
-			Address = dto.Address;
-			City = dto.City;
-			Region = dto.Region;
-			PostalCode = dto.PostalCode;
-			Country = dto.Country;
-			Phone = dto.Phone;
-			Fax = dto.Fax;
+			ContactName = dto.ContactName ?? string.Empty;
+			ContactTitle = dto.ContactTitle ?? string.Empty;
+			Address = dto.Address ?? string.Empty;
+			City = dto.City ?? string.Empty;
+			Region = dto.Region ?? string.Empty;
+			PostalCode = dto.PostalCode ?? string.Empty;
+			Country = dto.Country ?? string.Empty;
+			Phone = dto.Phone ?? string.Empty;
+			Fax = dto.Fax ?? string.Empty;
 		}
 
-		public CustomerDTO GetEntity()
-		{ return new CustomerDTO { CustomerID = CustomerID, CompanyName = CompanyName, ContactName = ContactName, ContactTitle = ContactTitle, Address = Address, City = City, Region = Region, PostalCode = PostalCode, Country = Country, Phone = Phone, Fax = Fax };}
+
+		public CustomersDTO GetEntity()
+		{
+			return new CustomersDTO { CustomerID = CustomerID, CompanyName = CompanyName, ContactName = ContactName, ContactTitle = ContactTitle, Address = Address, City = City, Region = Region, PostalCode = PostalCode, Country = Country, Phone = Phone, Fax = Fax };
+		}
 	}
 }

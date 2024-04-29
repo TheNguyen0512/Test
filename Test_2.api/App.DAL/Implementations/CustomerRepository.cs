@@ -20,9 +20,24 @@ namespace App.DAL.Implementations
 		{
 			_dbAppContext = dbAppContext;
 		}
-		public async Task<List<CustomerDTO>> GetAllCustomer()
+
+		public async Task<bool> CreateUpdateCustomer(CustomersDTO dto)
 		{
-			return await _dbAppContext.Customer.ToListAsync();
+			var anyDTO = await _dbAppContext.Customers.AnyAsync(x => x.CustomerID == dto.CustomerID);
+			if (anyDTO)
+			{
+				_dbAppContext.Customers.Update(dto);
+			}
+			else
+			{
+				_dbAppContext.Customers.Add(dto);
+			}
+			return await _dbAppContext.SaveChangesAsync() > 0;
+		}
+
+		public async Task<List<CustomersDTO>> GetAllCustomer()
+		{
+			return await _dbAppContext.Customers.ToListAsync();
 		}
 	}
 

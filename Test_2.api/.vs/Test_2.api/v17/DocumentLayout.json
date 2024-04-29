@@ -1,30 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\new\\Test_2.api\\",
+  "WorkspaceRootPath": "D:\\Tool\\Test\\Test_2.api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\new\\test_2.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|d:\\tool\\test\\test_2.api\\app.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\new\\test_2.api\\test_2.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:test_2.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|d:\\tool\\test\\test_2.api\\app.dal\\implementations\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\implementations\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\new\\test_2.api\\obj\\debug\\net6.0\\.netcoreapp,version=v6.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:obj\\debug\\net6.0\\.netcoreapp,version=v6.0.assemblyattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|d:\\tool\\test\\test_2.api\\app.dal\\appbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\appbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\new\\test_2.api\\app.entity\\obj\\debug\\net6.0\\app.entity.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:app.entity\\obj\\debug\\net6.0\\app.entity.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD7D6775-568B-45DC-BCF8-1DFF2CA02318}|App.Entity\\App.Entity.csproj|d:\\tool\\test\\test_2.api\\app.entity\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7D6775-568B-45DC-BCF8-1DFF2CA02318}|App.Entity\\App.Entity.csproj|solutionrelative:app.entity\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\new\\test_2.api\\obj\\debug\\net6.0\\test_2.api.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:obj\\debug\\net6.0\\test_2.api.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD7D6775-568B-45DC-BCF8-1DFF2CA02318}|App.Entity\\App.Entity.csproj|d:\\tool\\test\\test_2.api\\app.entity\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7D6775-568B-45DC-BCF8-1DFF2CA02318}|App.Entity\\App.Entity.csproj|solutionrelative:app.entity\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\new\\test_2.api\\app.dal\\obj\\debug\\net6.0\\app.dal.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:app.dal\\obj\\debug\\net6.0\\app.dal.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\tool\\test\\test_2.api\\dependencyconfig\\dependencyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:dependencyconfig\\dependencyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\tool\\test\\test_2.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A118E6D7-E20D-4860-8D32-8AD14CEE3FC0}|App.BLL\\App.BLL.csproj|d:\\tool\\test\\test_2.api\\app.bll\\interface\\icustomerbizlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A118E6D7-E20D-4860-8D32-8AD14CEE3FC0}|App.BLL\\App.BLL.csproj|solutionrelative:app.bll\\interface\\icustomerbizlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A118E6D7-E20D-4860-8D32-8AD14CEE3FC0}|App.BLL\\App.BLL.csproj|d:\\tool\\test\\test_2.api\\app.bll\\implementations\\customerbizlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A118E6D7-E20D-4860-8D32-8AD14CEE3FC0}|App.BLL\\App.BLL.csproj|solutionrelative:app.bll\\implementations\\customerbizlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|d:\\tool\\test\\test_2.api\\app.dal\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40373CF9-AA51-40C4-9A34-8079E42ABCDE}|App.DAL\\App.DAL.csproj|solutionrelative:app.dal\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|d:\\tool\\test\\test_2.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5CC9A3D9-2796-4FDF-9B82-1B054FC6AE33}|Test_2.api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\new\\Test_2.api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\new\\Test_2.api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:57:13.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Test_2.api",
-              "DocumentMoniker": "D:\\new\\Test_2.api\\Test_2.api.csproj",
-              "RelativeDocumentMoniker": "Test_2.api.csproj",
-              "ToolTip": "D:\\new\\Test_2.api\\Test_2.api.csproj",
-              "RelativeToolTip": "Test_2.api.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-29T07:51:00.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": ".NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
-              "DocumentMoniker": "D:\\new\\Test_2.api\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
-              "ToolTip": "D:\\new\\Test_2.api\\obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
-              "RelativeToolTip": "obj\\Debug\\net6.0\\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Title": "AppBaseRepository.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\AppBaseRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\AppBaseRepository.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\AppBaseRepository.cs",
+              "RelativeToolTip": "App.DAL\\AppBaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:47:36.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Test_2.api.AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\new\\Test_2.api\\obj\\Debug\\net6.0\\Test_2.api.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\net6.0\\Test_2.api.AssemblyInfo.cs",
-              "ToolTip": "D:\\new\\Test_2.api\\obj\\Debug\\net6.0\\Test_2.api.AssemblyInfo.cs",
-              "RelativeToolTip": "obj\\Debug\\net6.0\\Test_2.api.AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:47:24.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.Entity.AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\new\\Test_2.api\\App.Entity\\obj\\Debug\\net6.0\\App.Entity.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "App.Entity\\obj\\Debug\\net6.0\\App.Entity.AssemblyInfo.cs",
-              "ToolTip": "D:\\new\\Test_2.api\\App.Entity\\obj\\Debug\\net6.0\\App.Entity.AssemblyInfo.cs",
-              "RelativeToolTip": "App.Entity\\obj\\Debug\\net6.0\\App.Entity.AssemblyInfo.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAiwAsAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:47:21.205Z",
+              "WhenOpened": "2024-04-29T09:27:32.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "App.DAL.AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\new\\Test_2.api\\App.DAL\\obj\\Debug\\net6.0\\App.DAL.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "App.DAL\\obj\\Debug\\net6.0\\App.DAL.AssemblyInfo.cs",
-              "ToolTip": "D:\\new\\Test_2.api\\App.DAL\\obj\\Debug\\net6.0\\App.DAL.AssemblyInfo.cs",
-              "RelativeToolTip": "App.DAL\\obj\\Debug\\net6.0\\App.DAL.AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
+              "Title": "DependencyConfig.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\DependencyConfig\\DependencyConfig.cs",
+              "RelativeDocumentMoniker": "DependencyConfig\\DependencyConfig.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\DependencyConfig\\DependencyConfig.cs",
+              "RelativeToolTip": "DependencyConfig\\DependencyConfig.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:47:08.82Z",
+              "WhenOpened": "2024-04-29T09:20:55.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "App.DAL\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\ApplicationDbContext.cs",
+              "RelativeToolTip": "App.DAL\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T09:20:28.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerBizLogic.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.BLL\\Implementations\\CustomerBizLogic.cs",
+              "RelativeDocumentMoniker": "App.BLL\\Implementations\\CustomerBizLogic.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.BLL\\Implementations\\CustomerBizLogic.cs",
+              "RelativeToolTip": "App.BLL\\Implementations\\CustomerBizLogic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAEwAsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T09:18:12.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-29T09:12:31.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\Implementations\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Implementations\\CustomerRepository.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\Implementations\\CustomerRepository.cs",
+              "RelativeToolTip": "App.DAL\\Implementations\\CustomerRepository.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAUwCcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:34:47.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\Interface\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "App.DAL\\Interface\\ICustomerRepository.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.DAL\\Interface\\ICustomerRepository.cs",
+              "RelativeToolTip": "App.DAL\\Interface\\ICustomerRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAEwA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:30:50.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICustomerBizLogic.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.BLL\\Interface\\ICustomerBizLogic.cs",
+              "RelativeDocumentMoniker": "App.BLL\\Interface\\ICustomerBizLogic.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.BLL\\Interface\\ICustomerBizLogic.cs",
+              "RelativeToolTip": "App.BLL\\Interface\\ICustomerBizLogic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:34:02.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerModel.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.Entity\\Models\\CustomerModel.cs",
+              "RelativeDocumentMoniker": "App.Entity\\Models\\CustomerModel.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.Entity\\Models\\CustomerModel.cs",
+              "RelativeToolTip": "App.Entity\\Models\\CustomerModel.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAUwB0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:48:10.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerDTO.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\App.Entity\\DTO\\CustomerDTO.cs",
+              "RelativeDocumentMoniker": "App.Entity\\DTO\\CustomerDTO.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\App.Entity\\DTO\\CustomerDTO.cs",
+              "RelativeToolTip": "App.Entity\\DTO\\CustomerDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:55:33.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Tool\\Test\\Test_2.api\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Tool\\Test\\Test_2.api\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAEwBUAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:11:13.423Z",
               "EditorCaption": ""
             }
           ]

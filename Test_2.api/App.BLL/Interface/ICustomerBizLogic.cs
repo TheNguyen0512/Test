@@ -9,7 +9,8 @@ namespace App.BLL.Interface
 {
 	public interface ICustomerBizLogic
 	{
-		Task<List<CustomerModel>> GetAllCustomer();
+		Task<bool> CreateUpdateCustomer(CustomersModel model);
+		Task<List<CustomersModel>> GetAllCustomer();
 	}
 }
 

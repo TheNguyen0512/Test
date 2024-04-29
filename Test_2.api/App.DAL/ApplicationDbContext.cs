@@ -13,14 +13,14 @@ namespace App.DAL
             OnModelCreating(builder);
         }
 
-        public DbSet<CustomerDTO> Customer { get; set; }
+        public DbSet<CustomersDTO> Customers { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CustomerDTO>(b =>
+            modelBuilder.Entity<CustomersDTO>(b =>
             {
-                b.ToTable("Customer");
+                b.ToTable("Customers");
 					 b.HasKey(x => x.CustomerID);
 				});
         }

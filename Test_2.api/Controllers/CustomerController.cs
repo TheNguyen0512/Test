@@ -1,4 +1,5 @@
 ﻿using App.BLL.Interface;
+using App.Entity.Models;
 using Microsoft.AspNetCore.Mvc;
 using TFU.APIBased;
 
@@ -17,8 +18,24 @@ namespace Test_2.api.Controllers
 			this._customerBizLogic = customerBizLogic;
 		}
 
+		[HttpPost("create-update-customer")]
+		public async Task<ActionResult> CreateUpdateCustomer([FromBody] CustomersModel model)
+		{
+			try
+			{
+				if (!ModelState.IsValid) return SaveError();
+				var result = await _customerBizLogic.CreateUpdateCustomer(model);
+				return SaveSuccess(result);
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError("CreateUpdateCustomer: {0} {1}", ex.Message, ex.StackTrace);
+				return SaveError();
+			}
+		}
+
 		[HttpGet("get-all-customer")]
-		public async Task<ActionResult> GetAllDeviceType()
+		public async Task<ActionResult> GetAllCustomer()
 		{
 			try
 			{

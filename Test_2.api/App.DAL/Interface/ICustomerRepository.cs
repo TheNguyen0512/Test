@@ -10,6 +10,7 @@ namespace App.DAL.Interface
 {
 	public interface ICustomerRepository
 	{
-		Task<List<CustomerDTO>> GetAllCustomer();
+		Task<bool> CreateUpdateCustomer(CustomersDTO dto);
+		Task<List<CustomersDTO>> GetAllCustomer();
 	}
 }
